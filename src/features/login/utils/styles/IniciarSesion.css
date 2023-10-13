@@ -1,0 +1,48 @@
+.logInContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pt1{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.pt2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.igd{
+    height: 70px;
+    width: 200px;
+    background-image: url("../../../../global/assets/logo.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.aditionals{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+.aditionals a{
+    font-style: italic;
+}
+.formLogin{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

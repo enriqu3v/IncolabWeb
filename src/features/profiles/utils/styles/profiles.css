@@ -1,0 +1,13 @@
+.navbar{
+    grid-area: nav;
+}
+.menu{
+    grid-area: menu;
+}
+.contentContainer{
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+}

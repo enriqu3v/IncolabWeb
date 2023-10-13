@@ -1,0 +1,33 @@
+.menu ul li{
+    list-style: none;
+    margin: 0px;
+}
+.meLiTitle:hover{
+    color: var(--textColor1) !important;
+    background-color: var(--color1);
+}
+.meLiTitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--textColor2) ;
+    transition: all ease .2s ;
+}
+.meLiTitle p{
+    margin: 0px;
+    margin-right: 5px;
+    white-space: pre-wrap;
+    max-width: 140px;
+}
+.meLiTitle+ul{
+    margin-left: 20px;
+}
+.meLiIcon{
+    margin-right: 5px;
+}
+.menuLiDisactive{
+    height: 0px;
+    transform-origin: top;
+    overflow: hidden;
+}

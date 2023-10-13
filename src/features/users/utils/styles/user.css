@@ -1,0 +1,17 @@
+.cuInputContainer{
+    width: 610px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuInputAddress{
+    width: 610px;
+    height: 80px;
+}
+
+.cuInputContainer .cuInputAddress .inputAddress{
+    width: 610px;
+}
+
+

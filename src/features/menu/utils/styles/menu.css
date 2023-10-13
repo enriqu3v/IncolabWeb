@@ -1,0 +1,10 @@
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color3);
+    overflow-y: auto;
+}
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+}
