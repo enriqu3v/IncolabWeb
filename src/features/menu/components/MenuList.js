@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import "../../../features/menu/utils/styles/menuList.css"
-import { BsChevronDown,BsBoxSeam, BsGem, BsGear, BsCashCoin, BsClipboardData, BsCreditCardFill, BsBarChartLineFill, BsPeopleFill, BsChevronUp } from "react-icons/bs";
+import { BsChevronDown,BsBoxSeam, BsGem, BsGear, BsCashCoin, BsClipboardData, BsCreditCardFill, BsBarChartLineFill, BsPeopleFill, BsChevronUp, BsClipboard, BsFillcalen} from "react-icons/bs";
+import { FcSettings, FcCustomerSupport, FcMultipleDevices, FcCalendar, FcPlanner, FcDoughnutChart } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 function MenuList(props){
     const [toggle,setToggle] = useState(false);
     const Toggle =()=>setToggle(!toggle);
     switch(props.name){
+
+        // Pestaña Configuracion
         case "Configuracion":
         return(
             <li>
-                <div className="meLiTitle cPointer"  onClick={()=>Toggle()}><BsGear class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                <div className="meLiTitle cPointer ptop"  onClick={()=>Toggle()}><FcSettings class="meLiIcon"/><p>{props.name}</p>{toggle ?
                 <BsChevronUp size="15px"/>
                 :
                 <BsChevronDown size="15px"/>
@@ -19,10 +22,40 @@ function MenuList(props){
                 <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
             </li>
         )
+
+        // Pestaña Equipo
+        case "Equipo":
+        return(
+            <li>
+                <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcMultipleDevices class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                <BsChevronUp size="15px"/>
+                :
+                <BsChevronDown size="15px"/>
+                }
+                </div>
+                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
+            </li>
+        )
+
+        //Pestaña de Reportes
+        case "Reportes":
+        return(
+            <li>
+                <div className="meLiTitle cPointer ptop"  onClick={()=>Toggle()}><FcCustomerSupport class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                <BsChevronUp size="15px"/>
+                :
+                <BsChevronDown size="15px"/>
+                }
+                </div>
+                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
+            </li>
+        )
+
+        // Pestaña Inventario
         case "Inventario":
         return(
             <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsBoxSeam class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcDoughnutChart class="meLiIcon"/><p>{props.name}</p>{toggle ?
                 <BsChevronUp size="15px"/>
                 :
                 <BsChevronDown size="15px"/>
@@ -31,86 +64,12 @@ function MenuList(props){
                 <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
             </li>
         )
-        case "Joyeria":
+
+        // Pestaña Calendario
+        case "Calendario":
         return(
             <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsGem class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
-        case "Tesoreria":
-        return(
-            <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsCashCoin class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
-        
-        case "Contabilidad":
-        return(
-            <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsClipboardData class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
-        
-        case "Credito":
-        return(
-            <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsCreditCardFill class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
-        
-        case "Facturacion":
-        return(
-            <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsBarChartLineFill class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
-        
-        case "Cuentas por pagar":
-        return(
-            <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsCashCoin class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
-        case "Nomina":
-        return(
-            <li>
-                <div className="meLiTitle cPointer" onClick={()=>Toggle()}><BsPeopleFill class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcPlanner class="meLiIcon"/><p>{props.name}</p>{toggle ?
                 <BsChevronUp size="15px"/>
                 :
                 <BsChevronDown size="15px"/>

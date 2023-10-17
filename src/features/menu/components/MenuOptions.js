@@ -1,4 +1,7 @@
-const opt = [{
+const opt = [
+  
+  // Pestaña Configuracion
+  {
     name:"Configuracion",
     extend:true,
     sons:[{
@@ -17,82 +20,54 @@ const opt = [{
               }
         ]
     }]
-  },{
+  },
+  
+  // Pestaña Equipo
+  {
+    name:"Equipo",
+    extend:true,
+    sons:[{
+      name: "Gestion de  Equipos",
+      link:"/Equipos",
+      route:"Equipo/Gestion de Equipos",
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a."
+    }]
+  },
+  
+  // Pestaña Reportes
+  {
+    name:"Reportes",
+    extend:true,
+    sons:[
+      {
+        name:"Gestion de Reporte de Daños",
+        link:"/reporteDaños",
+        route:"Reportes/Gestion de Reporte de Daños",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. "
+      },{
+        name:"Gestion de Reporte de Mantenimientos",
+        link:"/reporteMantenimiento",
+        route:"Reportes/Gestion de Reporte de Mantenimientos",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. "
+      },{
+        name:"Indicadores de Gestion",
+        link:"/indicadoresGestion",
+        route:"Reportes/Indicadores de Gestion",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. "
+      }
+    ]
+  },
+
+  // Pestaña Inventario
+  {
     name:"Inventario",
     extend:false,
     sons:[]
-  },{
-    name:"Joyeria",
-    extend:false,
-    sons:[]
-  },{
-    name:"Tesoreria",
-    extend:false,
-    sons:[]
-  },{
-    name:"Contabilidad",
-    extend:true,
-    sons:[
-    {
-      name:"Actualizaciones",
-      extend:true,
-      sons:[{
-              name:"Tipos de comprobantes",
-              link:"/tiposdecomprobantes",
-              route:"Contabilidad/Actualizaciones/Tipos de comprobantes",
-              description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. Sed at odio nec nunc mattis ullamcorper sed sit amet neque. Cras pulvinar magna id nisl aliquet iaculis. Duis tincidunt rutrum porta. "
-            },
-            {
-              name:"Cuentas contables",
-              link:"/cuentascontables",
-              route:"Contabilidad/Actualizaciones/Cuentas contables",
-              description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. Sed at odio nec nunc mattis ullamcorper sed sit amet neque. Cras pulvinar magna id nisl aliquet iaculis. Duis tincidunt rutrum porta. "
-            }
-      ]
-    },
-    {
-      name:"Registros",
-      extend:true,
-      sons:[{
-              name:"Comprobantes",
-              link:"/comprobantes",
-              route:"Contabilidad/Registros/Comprobantes",
-              description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. Sed at odio nec nunc mattis ullamcorper sed sit amet neque. Cras pulvinar magna id nisl aliquet iaculis. Duis tincidunt rutrum porta. "
-            },
-            {
-              name:"Notas aclaratorias",
-              link:"/notasaclaratorias",
-              route:"Contabilidad/Registros/Notas aclaratorias",
-              description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. Sed at odio nec nunc mattis ullamcorper sed sit amet neque. Cras pulvinar magna id nisl aliquet iaculis. Duis tincidunt rutrum porta. "
-            }
-      ]
-    },
-    {
-      name:"Procesos",
-      extend:true,
-      sons:[{
-              name:"Foliar libros",
-              link:"/foliarlibros",
-              route:"Contabilidad/Procesos/Foliar libros",
-              description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. Sed at odio nec nunc mattis ullamcorper sed sit amet neque. Cras pulvinar magna id nisl aliquet iaculis. Duis tincidunt rutrum porta. "
-            }
-      ]
-    }
-]
-  },{
-    name:"Credito",
-    extend:false,
-    sons:[]
-  },{
-    name:"Facturacion",
-    extend:false,
-    sons:[]
-  },{
-    name:"Cuentas por pagar",
-    extend:false,
-    sons:[]
-  },{
-    name:"Nomina",
+  },
+  
+  // Pestaña Calendario
+  {
+    name:"Calendario",
     extend:false,
     sons:[]
   }

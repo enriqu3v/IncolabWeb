@@ -20,15 +20,15 @@ import Branch from "./features/branch/pages/Branch";
 function App() {
   const {GlobalState} = useContext(DataContext);
   
-    if(true){
-      return(
-        <BrowserRouter >
-          <Routes>
-            <Route path='/' element={<Login/>}/>
-          </Routes>
-        </BrowserRouter>
-      )
-    }
+    // if(true){
+    //   return(
+    //     <BrowserRouter >
+    //       <Routes>
+    //         <Route path='/' element={<Login/>}/>
+    //       </Routes>
+    //     </BrowserRouter>
+    //   )
+    // }
     return(
       <BrowserRouter >
         <Routes>

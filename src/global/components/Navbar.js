@@ -1,3 +1,4 @@
+import logo from "../assets/logo.jpg"
 import React, { useContext, useState } from "react";
 import { FaBars,  FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -13,6 +14,8 @@ function Navbar() {
   return (
       <div className="navbar">
           <FaBars className="naButton cPointer" onClick={()=>changeMenu()} />
+          <div>LOGO DE LA EMPRESA</div>
+          {/* Barra de busqueda */}
           <div className="naSearch">
             <input type="text" value={Search} onChange={(e)=>{setSearch(e.target.value)}}></input>
             <FaSearch className="naSeButton cPointer"/>
@@ -22,9 +25,11 @@ function Navbar() {
               null
             }
           </div>
+
+          {/* Logo del perfil y mini-menú*/}
           <div className="naProfile cPointer" onClick={()=>setToggleUser(!toggleUser)}>
             <div className="naData">
-              <p>{GlobalState.user.userName}</p><p>Contador</p>
+              <p>{GlobalState.user.userName}</p><p>ADMIN</p>
             </div>
             <div className="naUser"></div>
           </div>

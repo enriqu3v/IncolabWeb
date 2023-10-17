@@ -25,7 +25,7 @@ function Profiles() {
         ...data,
         [name]: value
     })
-}
+    }
   const {getProfiles,createProfile,changeProfile,GlobalState,changeStateProfile} = useContext(DataContext);
   var datafinal = GlobalState.profiles.map((dt,id)=>{
     if(dt.estado){

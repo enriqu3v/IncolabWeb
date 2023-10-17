@@ -6,14 +6,8 @@ import opt from "../../features/menu/components/MenuOptions";
 
 
 function Menu() {
-  /*
-    aqui se definen los items del menu de forma dinamica, para que en caso de crear nuevos items, simplemente tengan que editarse desde aqui
-    existen las rutas bases en la clase MenuList, las cuales son identificadas en un switch y se les agrega el icono que les perteneces,
-    no obstante, estas tienen unos items MenuList hijos, los cuales tambien se mapean, pero para evitar que se produzcan errores al mapear un
-    array sin objetos y retorne undefined al mapearlos debe ponerese extended true para indicar que tendran hijos y estos podran mapearse,
-    esto puede hacerse 2 niveles, ya que en el ultimo .map simplemente contempla items que no tienen hijos y los cuales conducen a una ruta (link),
-    si requiere hacer un menu con mas items hijos es necesario editar la logica del ultimo .map
-  */
+    /*aqui se definen los items del menu de forma dinamica, para que en caso de crear nuevos items, simplemente tengan que editarse desde aqui existen las rutas bases en la clase MenuList, las cuales son identificadas en un switch y se les agrega el icono que les perteneces, no obstante, estas tienen unos items MenuList hijos, los cuales tambien se mapean, pero para evitar que se produzcan errores al mapear un array sin objetos y retorne undefined al mapearlos debe ponerese extended true para indicar que tendran hijos y estos podran mapearse, esto puede hacerse 2 niveles, ya que en el ultimo .map simplemente contempla items que no tienen hijos y los cuales conducen a una ruta (link), si requiere hacer un menu con mas items hijos es necesario editar la logica del ultimo .map*/
+  
   return (
       <div className="menu">
         <ul>

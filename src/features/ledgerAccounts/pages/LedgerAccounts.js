@@ -184,7 +184,7 @@ function LedgerAccounts() {
                   ]}>
                   <div className="d-flex fd-column fai-start fjc-start w100" style={{height:"300px",overflowY:"auto"}}>
                     {
-                       datafinal.map((dt,ind)=>{
+                      datafinal.map((dt,ind)=>{
                         return(
                           <div>
                             <div className="cPointer fz-12 d-flex fd-row w100 cPointer" onClick={()=>{
@@ -317,7 +317,7 @@ function LedgerAccounts() {
                               }
                           </div>
                         )
-                       })
+                      })
                     }
                   </div>
               </DataTables2 >

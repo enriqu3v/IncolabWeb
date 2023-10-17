@@ -149,7 +149,7 @@ table tr:nth-child(2n){
     padding: 5px;
 }
 .btnEdit,.btnActive{
-    background-color: #2BCA6A;
+    background-color: rgb(43, 202, 106);
 } 
  .btnAddFunction, .btnAddBranch{
     background-color: #F85900;
