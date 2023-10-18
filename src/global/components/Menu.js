@@ -13,7 +13,7 @@ function Menu() {
         <ul>
           {
             opt.map((item)=>(
-              <MenuList name={item.name}>
+              <MenuList name={item.name} extend={item.extend}>
                 {
                   item.extend?
                   item.sons.map((item2)=>(

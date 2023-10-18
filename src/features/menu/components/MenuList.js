@@ -8,76 +8,122 @@ function MenuList(props){
     const [toggle,setToggle] = useState(false);
     const Toggle =()=>setToggle(!toggle);
     switch(props.name){
-
         // Pestaña Configuracion
         case "Configuracion":
-        return(
-            <li>
-                <div className="meLiTitle cPointer ptop"  onClick={()=>Toggle()}><FcSettings class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
+        
+            if(props.extend){
+                return(
+                    <li>
+                        <div className="meLiTitle cPointer ptop"  onClick={()=>Toggle()}><FcSettings class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                        <BsChevronUp size="15px"/>
+                        :
+                        <BsChevronDown size="15px"/>
+                        }
+                        </div>
+                        <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
+                    </li>
+                )
+            }
+            else{
+                return(
+                    <li>
+                        <Link to={props.link} className="nLink  cPointer ptop"><div className="meLiTitle"><FcSettings class="meLiIcon"/>{props.name}</div></Link>
+                    </li>
+                )
+            }
 
         // Pestaña Equipo
         case "Equipo":
-        return(
-            <li>
-                <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcMultipleDevices class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
+            if(props.extend){
+                return(
+                    <li>
+                        <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcMultipleDevices class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                        <BsChevronUp size="15px"/>
+                        :
+                        <BsChevronDown size="15px"/>
+                        }
+                        </div>
+                        <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
+                    </li>
+                )
+            }
+            else{
+                return(
+                    <li>
+                        <Link to={props.link} className="nLink  cPointer ptop"><div className="meLiTitle"><FcMultipleDevices class="meLiIcon"/>{props.name}</div></Link>
+                    </li>
+                )
+            }
 
         //Pestaña de Reportes
         case "Reportes":
-        return(
-            <li>
-                <div className="meLiTitle cPointer ptop"  onClick={()=>Toggle()}><FcCustomerSupport class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
+        
+            if(props.extend){
+                return(
+                    <li>
+                        <div className="meLiTitle cPointer ptop"  onClick={()=>Toggle()}><FcCustomerSupport class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                        <BsChevronUp size="15px"/>
+                        :
+                        <BsChevronDown size="15px"/>
+                        }
+                        </div>
+                        <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
+                    </li>
+                )
+            }
+            else{
+                return(
+                    <li>
+                        <Link to={props.link} className="nLink  cPointer ptop"><div className="meLiTitle"><FcCustomerSupport class="meLiIcon"/>{props.name}</div></Link>
+                    </li>
+                )
+            }
 
         // Pestaña Inventario
         case "Inventario":
-        return(
-            <li>
-                <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcDoughnutChart class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
+            if(props.extend){
+                return(
+                    <li>
+                        <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcDoughnutChart class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                        <BsChevronUp size="15px"/>
+                        :
+                        <BsChevronDown size="15px"/>
+                        }
+                        </div>
+                        <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
+                    </li>
+                )
+            }
+            else{
+                return(
+                    <li>
+                        <Link to={props.link} className="nLink  cPointer"><div className="meLiTitle ptop"><FcDoughnutChart class="meLiIcon"/>{props.name}</div></Link>
+                    </li>
+                )
+            }
 
         // Pestaña Calendario
         case "Calendario":
-        return(
-            <li>
-                <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcPlanner class="meLiIcon"/><p>{props.name}</p>{toggle ?
-                <BsChevronUp size="15px"/>
-                :
-                <BsChevronDown size="15px"/>
-                }
-                </div>
-                <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
-            </li>
-        )
+            if(props.extend){
+                return(
+                    <li>
+                        <div className="meLiTitle cPointer ptop" onClick={()=>Toggle()}><FcPlanner class="meLiIcon"/><p>{props.name}</p>{toggle ?
+                        <BsChevronUp size="15px"/>
+                        :
+                        <BsChevronDown size="15px"/>
+                        }
+                        </div>
+                        <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
+                    </li>
+                )
+            }
+            else{
+                return(
+                    <li>
+                        <Link to={props.link} className="nLink  cPointer"><div className="meLiTitle ptop"><FcPlanner class="meLiIcon"/>{props.name}</div></Link>
+                    </li>
+                )
+            }
         default:
             if(props.extend){
                 return(
