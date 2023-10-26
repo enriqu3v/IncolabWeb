@@ -12,9 +12,9 @@ function Layer(props) {
   return (
     <div className=
     {GlobalState.menu?
-      "container"
+      "containerPrincipal"
       :
-      "container disableMenu"
+      "containerPrincipal disableMenu"
     }>
       <Navbar/>
       {GlobalState.menu?
