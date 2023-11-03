@@ -101,22 +101,22 @@ function Profiles() {
         switch(toggle) {
           case "crear":
             return(
-                <FormBox title="Crear perfil" button="Crear" toggle={()=>Toggle("")} onclick={()=>CreateProfile()}>
+                <FormBox title="CREACIÓN DE PERFIL" button="Crear" toggle={()=>Toggle("")} onclick={()=>CreateProfile()}>
                   <div>
                     <div className="cpInputContainer">
                       <div className="inputContainer">
-                            <label  htmlFor="acoLabel">Codigo</label>
+                            <label className="mb-1.5" htmlFor="acoLabel">Codigo</label>
                             <input type="text"  value="#" id="acoLabel" disabled/>
                         </div>
                         <div className="inputContainer">
-                            <label htmlFor="state">Estado</label>
+                            <label className="mb-1.5" htmlFor="state">Estado</label>
                             <select  id="state" onChange={(e)=>handleChange(e)} name="state"  disabled>
                                 <option value={1}>ACTIVO</option>
                             </select>
                         </div>
                     </div>
                     <div className="inputContainerXl">
-                        <label htmlFor="detLabel">Detalles del perfil</label>
+                        <label className="mb-1.5" htmlFor="detLabel">Detalles del perfil</label>
                         <textarea type="textarea" onChange={(e)=>handleChange(e)} name="detalle" value={data.detalle} id="detLabel"/>
                     </div>
                   </div>

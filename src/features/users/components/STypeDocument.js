@@ -13,7 +13,7 @@ function STypeDocument({ handleChange }) {
             <div className="inputContainer">
                 <label className="geLabel" htmlFor="geLabel">Tipo de documento</label>
                 <select 
-                    className="geInput" 
+                    className="geInput mt-1.5" 
                     id="tipoDocumentoId" 
                     name="tipoDocumentoId"
                     onChange={(e)=>{handleChange(e)}}>

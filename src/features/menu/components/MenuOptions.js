@@ -2,18 +2,18 @@ const opt = [
   
   // Pestaña Configuracion
   {
-    name:"Configuracion",
+    name:"Configuración",
     extend:true,
     sons:[{
-        name:"Configuracion de usuarios",
+        name:"Configuración de usuarios",
         extend:true,
         sons:[{
-                name:"Gestion de usuarios",
+                name:"Gestión de usuarios",
                 link:"/usuarios",
                 route:"Configuracion/Configuracion de usuarios/Gestion de usuarios",
                 description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. Sed at odio nec nunc mattis ullamcorper sed sit amet neque. Cras pulvinar magna id nisl aliquet iaculis. Duis tincidunt rutrum porta. "
               },{
-                name:"Gestion de perfiles",
+                name:"Gestión de perfiles",
                 link:"/perfiles",
                 route:"Configuracion/Configuracion de usuarios/Gestion de perfiles",
                 description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. Sed at odio nec nunc mattis ullamcorper sed sit amet neque. Cras pulvinar magna id nisl aliquet iaculis. Duis tincidunt rutrum porta. "
@@ -27,7 +27,7 @@ const opt = [
     name:"Equipo",
     extend:true,
     sons:[{
-      name: "Gestion de  Equipos",
+      name: "Gestión de  Equipos",
       link:"/Equipos",
       route:"Equipo/Gestion de Equipos",
       description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a."

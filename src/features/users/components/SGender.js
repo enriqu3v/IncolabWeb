@@ -14,7 +14,7 @@ function SGender({handleChange}) {
        
             <div className="inputContainer">
                 <label className="geLabel" htmlFor="geLabel">Genero</label>
-                <select className="geInput" id="generoId" name="generoId" onChange={(e)=>{handleChange(e)}} >
+                <select className="geInput mt-1.5" id="generoId" name="generoId" onChange={(e)=>{handleChange(e)}} >
                  
                     {GlobalState.gender.map((item)=>{
                             return(

@@ -140,7 +140,7 @@ function  ListUser(){
             case  "crear":
                 return(
                     <FormBox  
-                        title="Crear Usuario" 
+                        title="CREACIÓN DE USUARIO"
                         button="Crear Usuario" 
                         toggle={() => Toggle("")} 
                         onclick={() => {createUser(person)}}
@@ -148,7 +148,7 @@ function  ListUser(){
                         <div>
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label  htmlFor="firstName">Primer Nombre</label>
+                                    <label className='mb-1.5' htmlFor="firstName">Primer Nombre</label>
                                     <input 
                                         type="text"  
                                         id="firstName" 
@@ -157,7 +157,7 @@ function  ListUser(){
                                         onChange={handleChange}/>
                                 </div>
                                 <div className="inputContainer">
-                                    <label  htmlFor="secondName">Segundo Nombre</label>
+                                    <label className='mb-1.5' htmlFor="secondName">Segundo Nombre</label>
                                     <input 
                                         type="text"  
                                         id="secondName" 
@@ -171,7 +171,7 @@ function  ListUser(){
                             </div>
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label  htmlFor="firstLastName">Primer Apellido</label>
+                                    <label className='mb-1.5' htmlFor="firstLastName">Primer Apellido</label>
                                     <input 
                                         type="text"  
                                         id="firstLastName" 
@@ -181,7 +181,7 @@ function  ListUser(){
                                     />
                                 </div>
                                 <div className="inputContainer">
-                                    <label  htmlFor="secondLastName">Segundo Apellido</label>
+                                    <label className='mb-1.5' htmlFor="secondLastName">Segundo Apellido</label>
                                     <input 
                                     type="text"  
                                     id="secondLastName"
@@ -196,7 +196,7 @@ function  ListUser(){
 
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label  htmlFor="phone">Celular</label>
+                                    <label className='mb-1.5' htmlFor="phone">Celular</label>
                                     <input 
                                         type="text"  
                                         id="phone" 
@@ -206,7 +206,7 @@ function  ListUser(){
                                     />
                                 </div>
                                 <div className="inputContainer">
-                                    <label  htmlFor="email">Correo electronico</label>
+                                    <label className='mb-1.5' htmlFor="email">Correo electronico</label>
                                     <input 
                                         type="text"  
                                         id="email" 
@@ -226,7 +226,7 @@ function  ListUser(){
                                     />
                                 </div>
                                 <div className="inputContainer">
-                                    <label  htmlFor="Document">Documento de identidad</label>
+                                    <label className='mb-1.5' htmlFor="Document">Documento de identidad</label>
                                     <input 
                                         type="text"  
                                         id="Document" 
@@ -240,7 +240,7 @@ function  ListUser(){
 
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label  htmlFor="address">Dirección</label>
+                                    <label className='mb-1.5' htmlFor="address">Dirección</label>
                                     <input  
                                         type="text"  
                                         id="address" 
@@ -265,7 +265,7 @@ function  ListUser(){
                                
                                 
                                 <div className="inputContainer">
-                                    <label  htmlFor="address">Nombre de usuario</label>
+                                    <label className='mb-1.5' htmlFor="address">Nombre de usuario</label>
                                     <input 
                                         className="inputAddress" 
                                         type="text"  

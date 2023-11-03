@@ -13,7 +13,7 @@ function SRol({handleChange}) {
             <div className="inputContainer">
                 <label className="geLabel" htmlFor="geLabel">Rol</label>
                 <select 
-                    className="geInput" 
+                    className="geInput mt-1.5" 
                     id="perfilId" 
                     name="perfilId"
                     onChange={(e)=>{handleChange(e)}} >
