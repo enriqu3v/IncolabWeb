@@ -1,0 +1,10 @@
+{
+    "editor.guides.bracketPairs": true,
+    "editor.cursorBlinking": "expand",
+    "editor.linkedEditing": true,
+    "editor.guides.bracketPairsHorizontal": "active",
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.autoClosingBrackets": "always"
+}

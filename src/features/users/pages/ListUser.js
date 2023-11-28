@@ -148,7 +148,7 @@ function  ListUser(){
                         <div>
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="firstName">Primer Nombre</label>
+                                    <label className='mb-1.5' htmlFor="firstName">Nombres</label>
                                     <input 
                                         type="text"  
                                         id="firstName" 
@@ -157,64 +157,14 @@ function  ListUser(){
                                         onChange={handleChange}/>
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="secondName">Segundo Nombre</label>
+                                    <label className='mb-1.5' htmlFor="secondName">Apellidos</label>
                                     <input 
                                         type="text"  
                                         id="secondName" 
                                         name="segundoNombre" 
                                         value={segundoNombre}
                                         onChange={handleChange}/>
-                                </div>
-
-                                
-                                
-                            </div>
-                            <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="firstLastName">Primer Apellido</label>
-                                    <input 
-                                        type="text"  
-                                        id="firstLastName" 
-                                        name="primerApellido"
-                                        value={primerApellido}
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="secondLastName">Segundo Apellido</label>
-                                    <input 
-                                    type="text"  
-                                    id="secondLastName"
-                                    name="segundoApellido"
-                                    value={segundoApellido}
-                                    onChange={handleChange}
-                                    />
-                                </div>
-                            </div>
-
-                           
-
-                            <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="phone">Celular</label>
-                                    <input 
-                                        type="text"  
-                                        id="phone" 
-                                        name="celular" 
-                                        value={celular}
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="email">Correo electronico</label>
-                                    <input 
-                                        type="text"  
-                                        id="email" 
-                                        name="email"
-                                        value={email}
-                                        onChange={handleChange}
-                                    />
-                                </div>
+                                </div>                                                         
                             </div>
 
                             <div className="cuInputContainer">
@@ -226,7 +176,7 @@ function  ListUser(){
                                     />
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="Document">Documento de identidad</label>
+                                    <label className='mb-1.5' htmlFor="Document">Número de Identidad</label>
                                     <input 
                                         type="text"  
                                         id="Document" 
@@ -236,55 +186,74 @@ function  ListUser(){
                                 </div>
                             </div>
 
-                           
+                            <div className="cuInputContainer">
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="firstLastName">Teléfono</label>
+                                    <input 
+                                        type="text"  
+                                        id="firstLastName" 
+                                        name="primerApellido"
+                                        value={primerApellido}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="secondLastName">Correo Electronico</label>
+                                    <input 
+                                    type="text"  
+                                    id="secondLastName"
+                                    name="segundoApellido"
+                                    value={segundoApellido}
+                                    onChange={handleChange}
+                                    />
+                                </div>
+                            </div>                         
+
+                            <div className="cuInputContainer">
+                            <div className="inputContainer">
+                                    <SRol 
+                                        name="perfilId"
+                                        value={perfilId}
+                                        handleChange={handleChange}
+                                    />
+                                </div>
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="email">Cargo / Rol</label>
+                                    <input 
+                                        type="text"  
+                                        id="email" 
+                                        name="email"
+                                        value={email}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                            </div>
+                          
 
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="address">Dirección</label>
-                                    <input  
-                                        type="text"  
-                                        id="address" 
-                                        name="direccion" 
-                                        value={direccion}
-                                        onChange={handleChange}
-                                    />
-
-                                </div>
-
-
-                                <div className="inputContainer">
-                                   <SGender  
-                                        name="generoId"
-                                        value={generoId}
-                                        handleChange={handleChange}
-                                    />
-                                </div>   
-                            </div>
-
-                            <div className="cuInputContainer ">
-                               
-                                
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="address">Nombre de usuario</label>
+                                    <label className='mb-1.5' htmlFor="phone">Usuario</label>
                                     <input 
-                                        className="inputAddress" 
                                         type="text"  
-                                        id="address" 
-                                        name="nombreUsuario" 
-                                        value={nombreUsuario}
+                                        id="phone" 
+                                        name="celular" 
+                                        value={celular}
                                         onChange={handleChange}
                                     />
-                                </div>   
+                                </div>
                                 <div className="inputContainer">
-                                    <SRol 
-                                        name="perfilId" 
-                                        value={perfilId}
-                                        handleChange={handleChange}
-                                        />
-                                </div> 
+                                    <label className='mb-1.5' htmlFor="email">Contraseña</label>
+                                    <input 
+                                        type="text"  
+                                        id="email" 
+                                        name="email"
+                                        value={email}
+                                        onChange={handleChange}
+                                    />
+                                </div>
                             </div>
 
-
+                            
                         </div>
                     </FormBox>
                 )
@@ -342,7 +311,7 @@ function  ListUser(){
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
                                     <label  htmlFor="typeDocument">Tipo Documento</label>
-                                    <select type="text"  id="typeDocument">
+                                    <select type="text"  id="">
                                         <option value="1">CC</option>
                                         <option value="2">TI</option>
                                     </select>
@@ -377,18 +346,16 @@ function  ListUser(){
                                 </div>   
                             </div>
 
-                            <div className="cuInputContainer ">
-                               
-                                
+                            <div className="cuInputContainer ">                                              
                                 <div className="inputContainer">
                                     <label  htmlFor="address">Nombre de usuario</label>
                                     <input className="inputAddress" type="text"  id="address" disabled/>
                                 </div>   
                                 <div className="inputContainer">
                                     <label  htmlFor="address">Rol</label>
-                                    <select type="text"  id="city">
-                                        <option value="1">Barranquilla</option>
-                                        <option value="2">Soledad</option>
+                                    <select type="text"  id="">
+                                        <option value="1">Supervisor</option>
+                                        <option value="2">Empleado</option>
                                     </select>
                                 </div> 
                             </div>

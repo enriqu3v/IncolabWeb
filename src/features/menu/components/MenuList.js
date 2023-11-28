@@ -9,8 +9,7 @@ function MenuList(props){
     const Toggle =()=>setToggle(!toggle);
     switch(props.name){
         // Pestaña Configuracion
-        case "Configuracion":
-        
+        case "Configuración":
             if(props.extend){
                 return(
                     <li>
@@ -45,6 +44,7 @@ function MenuList(props){
                         </div>
                         <ul className={toggle? "":"menuLiDisactive"}>{props.children}</ul>
                     </li>
+                    
                 )
             }
             else{
