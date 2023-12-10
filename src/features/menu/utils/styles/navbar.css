@@ -1,0 +1,94 @@
+.navbar{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: var(--color2);
+    position: relative;
+}
+.naButton{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.naSearch{
+    width: 400px;
+    position: relative;
+}
+.naSearch input[type="text"]{
+    width: 400px;
+}
+.naSearch .naSeButton{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: gray;
+}
+.naProfile{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 195px;
+}
+.naData{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.naData p{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.naData p:nth-child(2){
+    font-size: 13px;
+    font-weight: 400;
+}
+.naUser{
+    width: 45px;
+    height: 45px;
+    background-image: url(../../../../global/assets/user.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.naMenuUser{
+    position: absolute;
+    top:50px;
+    right: 10px;
+    width: 180px;
+    height: 96px;
+    background-color: var(--color3);
+    color: var(--textColor2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 5px;
+    border: 1px solid var(--color2);
+    padding: 0px;
+    overflow: hidden;
+}
+.naMenuUser li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: var(--textColor2);
+    height: 32px;
+    width: 180px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    transition: all ease .2s ;
+}
+.naMenuUser li:hover{
+    background-color: var(--color1);
+    color: var(--textColor1);
+}

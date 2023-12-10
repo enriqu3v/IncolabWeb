@@ -1,0 +1,12 @@
+.inpCreateVoucher{
+    border-radius: 0px!important;
+    box-shadow: none !important;
+    width: 100%!important;
+    background: none !important;
+}
+.lATR{
+    background-color: var(--color3) !important;
+}  
+.lATR:hover{
+    background-color: var(--color2) !important;
+}  
