@@ -3,18 +3,15 @@ import DataTables from '../../../global/components/DataTables';
 import '../utils/styles/user.css';
 import FormBox from '../../../global/components/FormBox';
 import { DataContext } from '../../../controladores/Context';
-
-import SeeInformation from '../components/SeeInformation';
-import SRol from '../components/SRol';
 import { FaPencilAlt, FaUserCheck, FaUserCog, FaUserTimes } from 'react-icons/fa';
 import { BsFillEyeFill } from 'react-icons/bs';
-import ChoseBranches from '../components/ChoseBranches';
 
 
-
-function  ListUser(){
+function CrudEquipos() {
     const [toggle, useToogle] = useState("");
     const [id, setId] = useState("");
+
+
     const [person, setPerson] = useState({
         id:"",
         generoId: '',
@@ -63,6 +60,8 @@ function  ListUser(){
             [e.target.name] : e.target.value
         })
     }
+
+    
     var datafinal = GlobalState.Users.map((dt,id)=>{
         if(dt.estado){
           return({...dt, 
@@ -127,28 +126,28 @@ function  ListUser(){
         )
     })
 
-   
-   
+
     useEffect(() => {
         
         getUser()
     }, [toggle]);
 
-   
-    function renderSwitch(){
+
+
+    function gestionequipos(){
         switch(toggle){
             case  "crear":
                 return(
                     <FormBox  
-                        title="CREACIÓN DE USUARIO"
-                        button="Crear Usuario" 
+                        title="CREACIÓN DE EQUIPO"
+                        button="Crear Equipo" 
                         toggle={() => Toggle("")} 
                         onclick={() => {createUser(person)}}
                     >
                         <div>
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="Nombres">Nombres</label>
+                                    <label className='mb-1.5' htmlFor="Nombres">Codigo del Equipo</label>
                                     <input 
                                         type="text"  
                                         id="Nombres" 
@@ -157,7 +156,7 @@ function  ListUser(){
                                         onChange={handleChange}/>
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="Apellidos">Apellidos</label>
+                                    <label className='mb-1.5' htmlFor="Apellidos">Nombre del Equipo</label>
                                     <input 
                                         type="text"  
                                         id="Apellidos" 
@@ -169,14 +168,14 @@ function  ListUser(){
 
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                        <label  htmlFor="tipoDocumentoId">Tipo Documento</label>
+                                        <label  htmlFor="tipoDocumentoId">Tipo de Equipo</label>
                                         <select type="text" value={tipoDocumentoId} name='tipoDocumentoId' id="tipoDocumentoId">
-                                            <option value="1">CC</option>
-                                            <option value="2">TI</option>
+                                            <option value="1">C</option>
+                                            <option value="2">P</option>
                                         </select>
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="cedula">Número de Identidad</label>
+                                    <label className='mb-1.5' htmlFor="cedula">Marca del Equipo</label>
                                     <input 
                                         type="text"  
                                         id="cedula" 
@@ -188,7 +187,7 @@ function  ListUser(){
 
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="celular">Teléfono</label>
+                                    <label className='mb-1.5' htmlFor="celular">Modelo del Equipo</label>
                                     <input 
                                         type="text"  
                                         id="celular" 
@@ -198,7 +197,7 @@ function  ListUser(){
                                     />
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="email">Correo Electronico</label>
+                                    <label className='mb-1.5' htmlFor="email">Serial del Equipo</label>
                                     <input 
                                     type="text"  
                                     id="email"
@@ -208,31 +207,11 @@ function  ListUser(){
                                     />
                                 </div>
                             </div>                         
-
-                            <div className="cuInputContainer">
-                            <div className="inputContainer">
-                                    <SRol 
-                                        name="area"
-                                        value={area}
-                                        handleChange={handleChange}
-                                    />
-                                </div>
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="cargo">Cargo / Rol</label>
-                                    <input 
-                                        type="text"  
-                                        id="cargo" 
-                                        name="cargo"
-                                        value={cargo}
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                            </div>
                           
 
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="nombreUsuario">Usuario</label>
+                                    <label className='mb-1.5' htmlFor="nombreUsuario">Codigo Monitor</label>
                                     <input 
                                         type="text"  
                                         id="nombreUsuario" 
@@ -242,7 +221,7 @@ function  ListUser(){
                                     />
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="password">Contraseña</label>
+                                    <label className='mb-1.5' htmlFor="password">Marca Monitor</label>
                                     <input 
                                         type="text"  
                                         id="password" 
@@ -253,6 +232,98 @@ function  ListUser(){
                                 </div>
                             </div>
 
+                            <div className="cuInputContainer">
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="nombreUsuario">Modelo Monitor</label>
+                                    <input 
+                                        type="text"  
+                                        id="nombreUsuario" 
+                                        name="nombreUsuario" 
+                                        value={nombreUsuario}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="password">Serial Monitor</label>
+                                    <input 
+                                        type="text"  
+                                        id="password" 
+                                        name="password"
+                                        value={password}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="cuInputContainer">
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="nombreUsuario">Gerencia Responsable</label>
+                                    <input 
+                                        type="text"  
+                                        id="nombreUsuario" 
+                                        name="nombreUsuario" 
+                                        value={nombreUsuario}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="password">Usuario Responsable</label>
+                                    <input 
+                                        type="text"  
+                                        id="password" 
+                                        name="password"
+                                        value={password}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="cuInputContainer">
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="nombreUsuario">Fecha de Compra</label>
+                                    <input 
+                                        type="text"  
+                                        id="nombreUsuario" 
+                                        name="nombreUsuario" 
+                                        value={nombreUsuario}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="password">Garantia</label>
+                                    <input 
+                                        type="text"  
+                                        id="password" 
+                                        name="password"
+                                        value={password}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* <div className="cuInputContainer">
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="nombreUsuario">Estado</label>
+                                    <input 
+                                        type="text"  
+                                        id="nombreUsuario" 
+                                        name="nombreUsuario" 
+                                        value={nombreUsuario}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className="inputContainer">
+                                    <label className='mb-1.5' htmlFor="password">Procesador</label>
+                                    <input 
+                                        type="text"  
+                                        id="password" 
+                                        name="password"
+                                        value={password}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                            </div> */}
+
                             
                         </div>
                     </FormBox>
@@ -260,12 +331,12 @@ function  ListUser(){
 
                 break;
             
-            case "asignar" :
+            /* case "asignar" :
                 return(
                     <ChoseBranches toggle={(t) => {Toggle(t)}} id={person.id}/>
                 )
 
-                break;
+                break; */
             
             case "editar" :
                 return(
@@ -367,10 +438,10 @@ function  ListUser(){
                 
                 break;
 
-                case "visualizar" :
+                /* case "visualizar" :
                 return(<SeeInformation toggle={()=>Toggle("")} data={person}/>)
                 
-                break;
+                break; */
 
             default:
                     return null;
@@ -379,9 +450,20 @@ function  ListUser(){
         }
     }
 
+
+
+
+
+
     const Toggle = (x) => {
         useToogle(x);
     }
+
+
+
+
+
+
     return (
         <div className='contentContainer'>
                 <div className="form">
@@ -406,12 +488,15 @@ function  ListUser(){
                     );}}>Crear Usuario</button>
                     ]} />
                 </div>
-            {renderSwitch()}
+            {gestionequipos()}
             </div>
             
 
     );
 
+
+
+
 }
 
-export default ListUser;
+export default CrudEquipos
