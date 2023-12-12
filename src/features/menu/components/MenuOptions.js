@@ -61,8 +61,15 @@ const opt = [
   // Pestaña Inventario
   {
     name:"Inventario",
-    extend:false,
-    sons:[]
+    extend:true,
+    sons:[
+      {
+        name:"Vista Inventario",
+        link:"/vistainventario",
+        route:"Inventario/Vista Inventario",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus nibh, id sodales diam pellentesque a. "
+      }
+    ]
   },
   
   // Pestaña Calendario

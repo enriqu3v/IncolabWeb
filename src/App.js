@@ -5,6 +5,7 @@ import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } fro
 import Profiles from './features/profiles/pages/Profiles';
 import ListUser from './features/users/pages/ListUser';
 import CrudEquipos from './features/equipos/pages/CrudEquipos'
+import ReporteDaños from './features/reportes/pages/ReporteDaños'
 import { DataContext } from "./controladores/Context";
 import ChangePassword from "./features/changePassword/pages/ChangePassword";
 import { FaThinkPeaks } from "react-icons/fa";
@@ -40,6 +41,26 @@ function App() {
             </Layer>
           }/>
           <Route path='/equipos' element={
+            <Layer>
+                <CrudEquipos/>
+            </Layer>
+          }/>
+          <Route path='/reporteDaños' element={
+            <Layer>
+                <ReporteDaños/>
+            </Layer>
+          }/>
+          <Route path='/reporteMantenimiento' element={
+            <Layer>
+                <CrudEquipos/>
+            </Layer>
+          }/>
+          <Route path='/indicadoresGestion' element={
+            <Layer>
+                <CrudEquipos/>
+            </Layer>
+          }/>
+          <Route path='/vistainventario' element={
             <Layer>
                 <CrudEquipos/>
             </Layer>

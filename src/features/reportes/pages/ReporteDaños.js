@@ -7,7 +7,7 @@ import { FaPencilAlt, FaUserCheck, FaUserCog, FaUserTimes } from 'react-icons/fa
 import { BsFillEyeFill } from 'react-icons/bs';
 
 
-function CrudEquipos() {
+function ReporteDaños() {
     const [toggle, useToogle] = useState("");
     const [id, setId] = useState("");
 
@@ -139,15 +139,15 @@ function CrudEquipos() {
             case  "crear":
                 return(
                     <FormBox  
-                        title="CREACIÓN DE EQUIPO"
-                        button="Crear Equipo" 
+                        title="CREACIÓN DE REPORTE"
+                        button="Crear Reporte" 
                         toggle={() => Toggle("")} 
                         onclick={() => {createUser(person)}}
                     >
                         <div>
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="Nombres">Codigo del Equipo</label>
+                                    <label className='mb-1.5' htmlFor="Nombres">ID Reporte</label>
                                     <input 
                                         type="text"  
                                         id="Nombres" 
@@ -156,7 +156,7 @@ function CrudEquipos() {
                                         onChange={handleChange}/>
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="Apellidos">Nombre del Equipo</label>
+                                    <label className='mb-1.5' htmlFor="Apellidos">Código del Equipo </label>
                                     <input 
                                         type="text"  
                                         id="Apellidos" 
@@ -175,7 +175,7 @@ function CrudEquipos() {
                                         </select>
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="cedula">Marca del Equipo</label>
+                                    <label className='mb-1.5' htmlFor="cedula">Instalaciones y Componentes</label>
                                     <input 
                                         type="text"  
                                         id="cedula" 
@@ -185,9 +185,14 @@ function CrudEquipos() {
                                 </div>
                             </div>
 
-                            <div className="cuInputContainer">
+                            
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-300 dark:text-black">Descripción De La Falla</label>
+                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-300 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-200 dark:placeholder-gray-700 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escribe aquí tu descripción detallada..." onChange={handleChange}></textarea>
+
+
+                            {/* <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="celular">Modelo del Equipo</label>
+                                    <label className='mb-1.5' htmlFor="celular">Descripción De La Falla </label>
                                     <input 
                                         type="text"  
                                         id="celular" 
@@ -196,17 +201,7 @@ function CrudEquipos() {
                                         onChange={handleChange}
                                     />
                                 </div>
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="email">Serial del Equipo</label>
-                                    <input 
-                                    type="text"  
-                                    id="email"
-                                    name="email"
-                                    value={email}
-                                    onChange={handleChange}
-                                    />
-                                </div>
-                            </div>                         
+                            </div>  */}                        
                           
 
                             <div className="cuInputContainer">
@@ -280,7 +275,7 @@ function CrudEquipos() {
 
                             <div className="cuInputContainer">
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="nombreUsuario">Fecha de Compra</label>
+                                    <label className='mb-1.5' htmlFor="nombreUsuario">Observaciones Iniciales</label>
                                     <input 
                                         type="text"  
                                         id="nombreUsuario" 
@@ -290,7 +285,7 @@ function CrudEquipos() {
                                     />
                                 </div>
                                 <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="password">Garantia</label>
+                                    <label className='mb-1.5' htmlFor="password">Acción de Mantenimiento Realizada</label>
                                     <input 
                                         type="text"  
                                         id="password" 
@@ -300,29 +295,6 @@ function CrudEquipos() {
                                     />
                                 </div>
                             </div>
-
-                            {/* <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="nombreUsuario">Estado</label>
-                                    <input 
-                                        type="text"  
-                                        id="nombreUsuario" 
-                                        name="nombreUsuario" 
-                                        value={nombreUsuario}
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                                <div className="inputContainer">
-                                    <label className='mb-1.5' htmlFor="password">Procesador</label>
-                                    <input 
-                                        type="text"  
-                                        id="password" 
-                                        name="password"
-                                        value={password}
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                            </div> */}
 
                             
                         </div>
@@ -338,7 +310,7 @@ function CrudEquipos() {
 
                 break; */
             
-            case "editar" :
+            /* case "editar" : */
                 return(
                     <FormBox title="Editar Usuario" button="Grabar" toggle={() => Toggle("")}>
                         <div>
@@ -485,7 +457,7 @@ function CrudEquipos() {
                         area: '',
                         nombreUsuario: '',
                         supervisor: ''}
-                    );}}>Crear Equipo</button>
+                    );}}>Crear Reporte</button>
                     ]} />
                 </div>
             {gestionequipos()}
@@ -499,4 +471,4 @@ function CrudEquipos() {
 
 }
 
-export default CrudEquipos
+export default ReporteDaños

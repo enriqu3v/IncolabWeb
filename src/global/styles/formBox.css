@@ -17,19 +17,26 @@
 }
 .form{
     height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
     padding: 10px 20px;
     background-color: var(--color3);
     border-radius: 5px;
     -webkit-box-shadow: -2px 13px 5px -11px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 13px 5px -11px rgba(0,0,0,0.75);
     box-shadow: -2px 13px 5px -11px rgba(0,0,0,0.75);
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .form h1{
     font-size: 15px;
     margin: 0px;
+    
 }
