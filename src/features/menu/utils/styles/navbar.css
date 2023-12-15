@@ -13,6 +13,16 @@
     font-size: 20px;
     margin-left: 15px;
 }
+
+.naLogo{
+    width: 150px;
+    height: 50px;
+    background-image: url(../../../../global/assets/logo.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+}
+
 .naSearch{
     width: 400px;
     position: relative;

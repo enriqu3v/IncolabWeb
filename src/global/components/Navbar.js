@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../../controladores/Context";
 import NSearchOptions from "../../features/menu/components/NSearchOptions";
 import "../../features/menu/utils/styles/navbar.css"
+import "../assets/logo.png";
 
 
 function Navbar() {
@@ -14,7 +15,7 @@ function Navbar() {
   return (
       <div className="navbar">
           <FaBars className="naButton cPointer" onClick={()=>changeMenu()} />
-          <img src="../assets/logo.png" alt="LogoIncolab" />
+          <div className="naLogo"></div>
           {/* Barra de busqueda */}
           <div className="naSearch">
             <input type="text" value={Search} onChange={(e)=>{setSearch(e.target.value)}}></input>
