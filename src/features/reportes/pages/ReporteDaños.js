@@ -170,8 +170,9 @@ function ReporteDaños() {
                                 <div className="inputContainer">
                                         <label  htmlFor="tipoDocumentoId">Tipo de Equipo</label>
                                         <select type="text" value={tipoDocumentoId} name='tipoDocumentoId' id="tipoDocumentoId">
-                                            <option value="1">C</option>
-                                            <option value="2">P</option>
+                                            <option value="1">LapTop</option>
+                                            <option value="2">Desktop</option>
+                                            <option value="3">Otros</option>
                                         </select>
                                 </div>
                                 <div className="inputContainer">
