@@ -6,6 +6,7 @@ import Profiles from './features/profiles/pages/Profiles';
 import ListUser from './features/users/pages/ListUser';
 import CrudEquipos from './features/equipos/pages/CrudEquipos'
 import ReporteDaños from './features/reportes/pages/ReporteDaños'
+import RepoteMantenimientos from './features/reportes/pages/ReporteMantenimientos'
 import { DataContext } from "./controladores/Context";
 import ChangePassword from "./features/changePassword/pages/ChangePassword";
 import { FaThinkPeaks } from "react-icons/fa";
@@ -52,7 +53,7 @@ function App() {
           }/>
           <Route path='/reporteMantenimiento' element={
             <Layer>
-                <CrudEquipos/>
+                <RepoteMantenimientos/>
             </Layer>
           }/>
           <Route path='/indicadoresGestion' element={

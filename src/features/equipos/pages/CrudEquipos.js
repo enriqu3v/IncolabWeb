@@ -469,7 +469,7 @@ function CrudEquipos() {
                 <div className="form">
                     <DataTables 
                     toggle={(t)=>{Toggle(t)}} data={datafinal} 
-                    dataSchema={["Codigo Equipo","Nombre del Equipo","Tipo de Equipo","Codigo Monitor","Marca Monitor","Modelo Monitor","Gerencia Responsable","Usuario Responsable","Funcionalidades"]} buttons={[
+                    dataSchema={["Código Equipo","Nombre del Equipo","Tipo de Equipo","Codigo Monitor","Marca Monitor","Modelo Monitor","Gerencia Responsable","Usuario Responsable","Funcionalidades"]} buttons={[
                     <button onClick={()=>{Toggle("crear");setPerson({
                         generoId: '',
                         tipoDocumentoId: '',

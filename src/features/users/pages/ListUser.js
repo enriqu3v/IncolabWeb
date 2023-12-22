@@ -391,7 +391,7 @@ function  ListUser(){
                 <div className="form">
                     <DataTables 
                     toggle={(t)=>{Toggle(t)}} data={datafinal} 
-                    dataSchema={["Id","Usuario","Documento","Nombres","Apellidos","Área","Cargo","Teléfono","Funcionalidades"]} buttons={[
+                    dataSchema={["ID","Usuario","Documento","Nombres","Apellidos","Área","Cargo","Teléfono","Funcionalidades"]} buttons={[
                     <button onClick={()=>{Toggle("crear");setPerson({
                         generoId: '',
                         tipoDocumentoId: '',

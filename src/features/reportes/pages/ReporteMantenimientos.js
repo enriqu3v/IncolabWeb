@@ -139,7 +139,7 @@ function ReporteDaños() {
             case  "crear":
                 return(
                     <FormBox  
-                        title="CREACIÓN DE REPORTE DE DAÑO"
+                        title="CREACIÓN DE REPORTE DE MANTENIMIENTO"
                         button="Crear Reporte" 
                         toggle={() => Toggle("")} 
                         onclick={() => {createUser(person)}}
@@ -266,104 +266,104 @@ function ReporteDaños() {
                 break; */
             
             /* case "editar" : */
-                return(
-                    <FormBox title="Editar Usuario" button="Grabar" toggle={() => Toggle("")}>
-                        <div>
-                            <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label  htmlFor="firstName">Nombres</label>
-                                    <input type="text"  id="firstName"/>
-                                </div>
-                                <div className="inputContainer">
-                                    <label  htmlFor="secondName">Apellidos</label>
-                                    <input type="text"  id="secondName"/>
-                                </div>
+                // return(
+                //     <FormBox title="Editar Usuario" button="Grabar" toggle={() => Toggle("")}>
+                //         <div>
+                //             <div className="cuInputContainer">
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="firstName">Nombres</label>
+                //                     <input type="text"  id="firstName"/>
+                //                 </div>
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="secondName">Apellidos</label>
+                //                     <input type="text"  id="secondName"/>
+                //                 </div>
 
                                 
                                 
-                            </div>
-                            <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label  htmlFor="firstLastName">Primer Apellido</label>
-                                    <input type="text"  id="firstLastName"/>
-                                </div>
-                                <div className="inputContainer">
-                                    <label  htmlFor="secondLastName">Segundo Apellido</label>
-                                    <input type="text"  id="secondLastName"/>
-                                </div>
-                            </div>
+                //             </div>
+                //             <div className="cuInputContainer">
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="firstLastName">Primer Apellido</label>
+                //                     <input type="text"  id="firstLastName"/>
+                //                 </div>
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="secondLastName">Segundo Apellido</label>
+                //                     <input type="text"  id="secondLastName"/>
+                //                 </div>
+                //             </div>
 
                            
 
-                            <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label  htmlFor="phone">Celular</label>
-                                    <input type="text"  id="phone"/>
-                                </div>
-                                <div className="inputContainer">
-                                    <label  htmlFor="email">Correo electronico</label>
-                                    <input type="text"  id="email"/>
-                                </div>
-                            </div>
+                //             <div className="cuInputContainer">
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="phone">Celular</label>
+                //                     <input type="text"  id="phone"/>
+                //                 </div>
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="email">Correo electronico</label>
+                //                     <input type="text"  id="email"/>
+                //                 </div>
+                //             </div>
 
-                            <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label  htmlFor="typeDocument">Tipo Documento</label>
-                                    <select type="text"  id="">
-                                        <option value="1">CC</option>
-                                        <option value="2">TI</option>
-                                    </select>
-                                </div>
-                                <div className="inputContainer">
-                                    <label  htmlFor="Document">Documento de identidad</label>
-                                    <input type="text"  id="Document"/>
-                                </div>
-                            </div>
+                //             <div className="cuInputContainer">
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="typeDocument">Tipo Documento</label>
+                //                     <select type="text"  id="">
+                //                         <option value="1">CC</option>
+                //                         <option value="2">TI</option>
+                //                     </select>
+                //                 </div>
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="Document">Documento de identidad</label>
+                //                     <input type="text"  id="Document"/>
+                //                 </div>
+                //             </div>
 
-                            <div className="cuInputContainer">
-                                <div className="inputContainer">
-                                    <label  htmlFor="dpto">Departamento</label>
-                                    <select type="text"  id="dpto">
-                                        <option value="1">Atlantico</option>
-                                        <option value="2">Bolivar</option>
-                                    </select>
-                                </div>
-                                <div className="inputContainer">
-                                    <label  htmlFor="city">Ciudad</label>
-                                    <select type="text"  id="city">
-                                        <option value="1">Barranquilla</option>
-                                        <option value="2">Soledad</option>
-                                    </select>
-                                </div>
-                            </div>
+                //             <div className="cuInputContainer">
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="dpto">Departamento</label>
+                //                     <select type="text"  id="dpto">
+                //                         <option value="1">Atlantico</option>
+                //                         <option value="2">Bolivar</option>
+                //                     </select>
+                //                 </div>
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="city">Ciudad</label>
+                //                     <select type="text"  id="city">
+                //                         <option value="1">Barranquilla</option>
+                //                         <option value="2">Soledad</option>
+                //                     </select>
+                //                 </div>
+                //             </div>
 
-                            <div className="cuInputContainer">
-                                <div className="inputContainer cuInputAddress">
-                                    <label  htmlFor="address">Dirección</label>
-                                    <input className="inputAddress" type="text"  id="address"/>
-                                </div>   
-                            </div>
+                //             <div className="cuInputContainer">
+                //                 <div className="inputContainer cuInputAddress">
+                //                     <label  htmlFor="address">Dirección</label>
+                //                     <input className="inputAddress" type="text"  id="address"/>
+                //                 </div>   
+                //             </div>
 
-                            <div className="cuInputContainer ">                                              
-                                <div className="inputContainer">
-                                    <label  htmlFor="address">Nombre de usuario</label>
-                                    <input className="inputAddress" type="text"  id="address" disabled/>
-                                </div>   
-                                <div className="inputContainer">
-                                    <label  htmlFor="address">Rol</label>
-                                    <select type="text"  id="">
-                                        <option value="1">Supervisor</option>
-                                        <option value="2">Empleado</option>
-                                    </select>
-                                </div> 
-                            </div>
+                //             <div className="cuInputContainer ">                                              
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="address">Nombre de usuario</label>
+                //                     <input className="inputAddress" type="text"  id="address" disabled/>
+                //                 </div>   
+                //                 <div className="inputContainer">
+                //                     <label  htmlFor="address">Rol</label>
+                //                     <select type="text"  id="">
+                //                         <option value="1">Supervisor</option>
+                //                         <option value="2">Empleado</option>
+                //                     </select>
+                //                 </div> 
+                //             </div>
 
 
-                        </div>
-                    </FormBox>
-                )
+                //         </div>
+                //     </FormBox>
+                // )
                 
-                break;
+                // break;
 
                 /* case "visualizar" :
                 return(<SeeInformation toggle={()=>Toggle("")} data={person}/>)
