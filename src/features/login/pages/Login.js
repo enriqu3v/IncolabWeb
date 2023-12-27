@@ -39,11 +39,11 @@ function Login() {
                                 <div className="formLogin">
                                     <div className="igd" style={{marginBottom:"40px"}}></div>
                                     <div className="inputContainer" style={{marginBottom:"20px"}}>
-                                        <label  htmlFor="usLabel" style={{fontSize:"20px",height:"22px"}}>Usuario</label>
+                                        <label  htmlFor="usLabel" style={{fontSize:"20px",height:"22px",marginBottom:"8px"}}>Usuario</label>
                                         <input type="text" value={user} onChange={e => setUser(e.target.value)} id="usLabel"/>
                                     </div>
                                     <div className="inputContainer" style={{marginBottom:"20px"}}>
-                                        <label  htmlFor="coLabel" style={{fontSize:"20px",height:"22px"}}>Contraseña</label>
+                                        <label  htmlFor="coLabel" style={{fontSize:"20px",height:"22px",marginBottom:"8px" }}>Contraseña</label>
                                         <input type="password" value={password} onChange={e => setPassword(e.target.value)}  id="coLabel"/>
                                     </div>
                                     <div className="aditionals"  style={{marginBottom:"40px"}}>

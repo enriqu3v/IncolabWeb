@@ -18,7 +18,7 @@ import Layer from "./global/components/Layer";
 function App() {
   const {GlobalState} = useContext(DataContext);
   
-     /* if(true){
+     if(!true){
        return(
          <BrowserRouter >
            <Routes>
@@ -26,7 +26,7 @@ function App() {
            </Routes>
          </BrowserRouter>
        )
-     } */
+     }
 
     return(
       <BrowserRouter >
