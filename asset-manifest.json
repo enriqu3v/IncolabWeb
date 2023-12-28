@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/IncolabWeb/static/css/main.0c0f2d0d.css",
-    "main.js": "/IncolabWeb/static/js/main.09b2b00b.js",
-    "static/js/787.b7b63578.chunk.js": "/IncolabWeb/static/js/787.b7b63578.chunk.js",
+    "main.css": "/IncolabWeb/static/css/main.e7131c27.css",
+    "main.js": "/IncolabWeb/static/js/main.466425a1.js",
+    "static/js/787.8c19599d.chunk.js": "/IncolabWeb/static/js/787.8c19599d.chunk.js",
     "static/media/anuncio1.png": "/IncolabWeb/static/media/anuncio1.7214535f16cbe4b29992.png",
     "static/media/anuncio3.png": "/IncolabWeb/static/media/anuncio3.fefa1fee7f63f0c55bef.png",
     "static/media/anuncio2.png": "/IncolabWeb/static/media/anuncio2.bed5748717667e637d96.png",
-    "static/media/arial.ttf": "/IncolabWeb/static/media/arial.e8b1471c1f6fb339ab8a.ttf",
+    "static/media/logo.png": "/IncolabWeb/static/media/logo.2eeb583ad3c2548c985c.png",
     "static/media/logo.jpg": "/IncolabWeb/static/media/logo.1df11a3d9b30ba7c5354.jpg",
     "index.html": "/IncolabWeb/index.html",
-    "main.0c0f2d0d.css.map": "/IncolabWeb/static/css/main.0c0f2d0d.css.map",
-    "main.09b2b00b.js.map": "/IncolabWeb/static/js/main.09b2b00b.js.map",
-    "787.b7b63578.chunk.js.map": "/IncolabWeb/static/js/787.b7b63578.chunk.js.map"
+    "main.e7131c27.css.map": "/IncolabWeb/static/css/main.e7131c27.css.map",
+    "main.466425a1.js.map": "/IncolabWeb/static/js/main.466425a1.js.map",
+    "787.8c19599d.chunk.js.map": "/IncolabWeb/static/js/787.8c19599d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c0f2d0d.css",
-    "static/js/main.09b2b00b.js"
+    "static/css/main.e7131c27.css",
+    "static/js/main.466425a1.js"
   ]
 }
