@@ -45,6 +45,7 @@ function ReporteDaños() {
         celular,
         municipioId,
         direccion,
+        message,
         area,
         cargo,
         nombreUsuario,
@@ -148,7 +149,7 @@ function ReporteDaños() {
 
 
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-300 dark:text-black">Actividad en Curso</label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-300 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-200 dark:placeholder-gray-700 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Describa detalladamente la acción que estaba realizando al momento de ocurrir la falla..." onChange={handleChange}></textarea>
+                            <textarea id="message" value={message} rows="4" class="block p-2.5 w-full text-sm text-gray-300 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-200 dark:placeholder-gray-700 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Describa detalladamente la acción que estaba realizando al momento de ocurrir la falla..." onChange={handleChange}></textarea>
 
 
 
